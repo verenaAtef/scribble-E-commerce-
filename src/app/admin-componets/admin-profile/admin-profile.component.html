@@ -1,0 +1,71 @@
+<div class="profile">
+  <app-side-nav></app-side-nav>
+  <!-- large screen -->
+  <div class="large-screen">
+    <!-- <div class="back"> -->
+    <!-- backgroud div to repair our opacity img-->
+    <!-- </div>  -->
+    <div class="main-container" [@paintStrokeAnimation]>
+      <div>
+        <p class="Admin-title">Admin Profile</p>
+      </div>
+      <div class="btn-img" onclick="{}">
+        <a href="">
+          <!-- <img [src]="assets / images / btn_img" alt="" /> -->
+        </a>
+      </div>
+      <div class="admin-container">
+        <div class="card-container">
+          <div class="card-img">
+            <img src="assets\images\Admin-img.png" alt="" />
+          </div>
+          <div class="card-text">
+            <div class="card-text-titles">
+              <p>User Name:</p>
+              <p>E-mail:</p>
+              <p>Phone:</p>
+            </div>
+            <div class="card-text-info">
+              <p>{{ adminProfile.userName }}</p>
+              <p>{{ adminProfile.Email }}</p>
+              <p>{{ adminProfile.Phone }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="img-container">
+          <!-- <img src="bg2-img.png" alt=""> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- sm screen -->
+  <div class="sm-screen">
+    <div class="main-container-sm">
+      <div class="div">
+        <div class="admin-title-sm">Admin Profile</div>
+        <div class="card-img-sm">
+          <img src="assets\images\Admin-img.png" alt="" />
+        </div>
+        <div class="card-text-sm">
+          <div class="card-text-titles-sm">
+            <p>User Name:</p>
+            <p>E-mail:</p>
+            <p>Age:</p>
+            <p>Phone:</p>
+          </div>
+          <div class="card-text-info-sm">
+            <p>{{ adminProfile.userName }}</p>
+            <p>{{ adminProfile.Email }}</p>
+            <p>{{ adminProfile.Age }}</p>
+            <!-- <p>{{ adminProfile.Phone }}</p> -->
+          </div>
+        </div>
+        <div class="btn-img-sm" onclick="{}">
+          <!-- <a href="">
+            <img src="assets\images\Admin-img.png" alt="" />
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

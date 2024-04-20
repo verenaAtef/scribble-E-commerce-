@@ -1,0 +1,160 @@
+<!-- <app-navbar></app-navbar>
+<div class="About">
+  <div class="showmessage">
+    <div class="head-1">
+      <div class="head">Get in toch</div>
+      <div class="head_visit">
+        <p class="head-p">Visit Us</p>
+        <div>
+          <p class="p">Come and say hello,in our office HQ</p>
+          <p class="p2">27,El-Horyaa street Ismilia street</p>
+        </div>
+      </div>
+      <div class="head_visit">
+        <p class="head-p">Chat to Us</p>
+        <div>
+          <p class="p">Our friendly team to here to help</p>
+          <p class="p2">Scripple_teamgmail.com</p>
+        </div>
+      </div>
+      <div class="head_visit">
+        <p class="head-p">Call Us</p>
+        <div>
+          <p class="p">From SUN to THR 08:00 am to 04:00 pm</p>
+          <p class="p2">Scripple_teamgmail.com</p>
+        </div>
+      </div>
+    </div>
+    <img src="assets/images/pngwing 13.png" class="contactimage" alt=""/>
+  </div>
+  <div class="contact-message">
+    <div class="head-1"><div class="head">Contact US</div></div>
+    <form class="form" action="">
+      <div class="lblinp">
+        <div class="lbl">
+          <div><label for="first_name">First Name</label></div>
+          <input type="text" name="first_name" id="first_name" />
+        </div>
+        <div class="lbl">
+          <div><label for="last_name">Last Name</label></div>
+          <input type="text" name="last_name" id="last_name" />
+        </div>
+      </div>
+      <div class="lblinp">
+        <div class="lbl email">
+          <div><label for="email">Your Email</label></div>
+          <input type="email" name="email" id="email" />
+        </div>
+      </div>
+      <div class="lblinp">
+        <div class="lbl email">
+          <div><label for="email">Your Phone</label></div>
+          <input type="email" name="email" id="email" />
+        </div>
+      </div>
+      <div class="lblinp">
+        <div class="lbl email">
+          <div><label for="email">Leave your message</label></div>
+          <textarea name="" id=""></textarea>
+        </div>
+      </div>
+      <div class="immmg">
+        <div class="imgg">
+          <p>Send Message</p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div> -->
+<app-navbar></app-navbar>
+<div class="About">
+  <div class="showmessage">
+    <div class="head-1">
+      <div class="head">Get in toch</div>
+      <div class="head_visit">
+        <p class="head-p">Visit Us</p>
+        <div>
+          <p class="p">Come and say hello,in our office HQ</p>
+          <p class="p2">27,El-Horyaa street Ismilia street</p>
+        </div>
+      </div>
+      <div class="head_visit">
+        <p class="head-p">Chat to Us</p>
+        <div>
+          <p class="p">Our friendly team to here to help</p>
+          <p class="p2">Scripple_teamgmail.com</p>
+        </div>
+      </div>
+      <div class="head_visit">
+        <p class="head-p">Call Us</p>
+        <div>
+          <p class="p">From SUN to THR 08:00 am to 04:00 pm</p>
+          <p class="p2">Scripple_teamgmail.com</p>
+        </div>
+      </div>
+    </div>
+    <img src="assets/images/pngwing 13.png" class="contactimage" alt="" />
+  </div>
+  <div class="contact-message" [@paintStrokeAnimation]>
+    <div class="head-1"><div class="head">Contact US</div></div>
+    <form class="form" [formGroup]="regValidation">
+      <div class="lblinp">
+        <div class="lbl">
+          <div><label for="first_name">First Name</label></div>
+          <input
+            type="text"
+            name="first_name"
+            [(ngModel)]="firstName"
+            formControlName="firstName"
+            id="first_name"
+          />
+        </div>
+        <div class="lbl">
+          <div><label for="last_name">Last Name</label></div>
+          <input
+            type="text"
+            name="last_name"
+            [(ngModel)]="lastName"
+            formControlName="lastName"
+            id="last_name"
+          />
+        </div>
+      </div>
+      <div class="lblinp">
+        <div class="lbl email">
+          <div><label for="email">Your Email</label></div>
+          <input
+            type="email"
+            name="email"
+            [(ngModel)]="Email"
+            formControlName="Email"
+            id="email"
+          />
+        </div>
+      </div>
+      <div class="lblinp">
+        <div class="lbl email">
+          <div><label for="email">Your Phone</label></div>
+          <input
+            type="email"
+            name="email"
+            [(ngModel)]="Phone"
+            formControlName="Phone"
+            id="email"
+          />
+        </div>
+      </div>
+      <div class="lblinp">
+        <div class="lbl email">
+          <div><label for="email">Leave your message</label></div>
+          <textarea name="" id=""></textarea>
+        </div>
+      </div>
+      <div class="immmg">
+        <div class="imgg">
+          <p>Send Message</p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

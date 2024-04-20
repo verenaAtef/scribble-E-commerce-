@@ -1,0 +1,192 @@
+<!-- <form [formGroup]="regValidation">
+  <div class="logo">
+    <img
+      class="logo1"
+      src="../../../assets/images/WhatsApp_Image_2024-02-09_at_23.20 2.png"
+      alt=""
+    />
+    <img
+      class="logo2"
+      src="../../../assets/images/Don’t Touch It’s Art.png"
+      alt=""
+    />
+  </div>
+  <div class="sign">
+    <div class="pn">
+      <img class="img" src="../../../assets/images/pngwing 2 (4).png" alt="" />
+    </div>
+    <div class="info">
+      <p class="title">WELCOME ARTIST !</p>
+      <p class="title">Login to your account</p>
+      <div class="email">
+        <label class="d-block">E-mail:</label>
+        <input
+          [(ngModel)]="Email"
+          class="inputt"
+          type="email"
+          name="Email"
+          formControlName="Email"
+          placeholder="Enter your email"
+        />
+        <p
+          class="eror"
+          *ngIf="!EmailValid && regValidation.controls.Email.touched"
+        >
+          Please enter the correct Email
+        </p>
+        <i class="fa-solid fa-envelope iconEmail"></i>
+      </div>
+      <div class="pass">
+        <label class="d-block">Password:</label>
+        <input
+          [(ngModel)]="Password"
+          class="inputt"
+          type="{{ passwordVisible ? 'text' : 'password' }}"
+          formControlName="Password"
+          placeholder="Enter your password"
+        />
+        <ng-container
+          *ngIf="!PasswoedValid && regValidation.controls.Password.touched"
+        >
+          <p class="eror">
+            Password length should be greater than 8 characters
+          </p>
+        </ng-container>
+
+        <i
+          class="{{
+            passwordVisible ? 'fa fa-eye-slash' : 'fa fa-eye'
+          }} iconEye"
+          (click)="togglePasswordVisibility()"
+        ></i>
+        <i class="fa-solid fa-lock iconPassword"></i>
+      </div>
+      <div
+        class="radio d-flex text-white justify-content-around w-75"
+        style="align-items: center"
+      >
+        <label>Choose your rule:</label>
+        <div class="d-flex">
+          <input
+            checked
+            class="mx-lg-2 mx"
+            type="radio"
+            value="user"
+            name="Admin"
+            id=""
+          />
+          <p class="my-1">Artist</p>
+        </div>
+        <div class="d-flex">
+          <input class="mx-2" type="radio" value="admin" name="Admin" id="" />
+          <p class="my-1">Admin</p>
+        </div>
+      </div>
+      <div class="radio remember d-flex text-white justify-content-around w-75">
+        <div class="d-flex" style="align-items: center">
+          <input class="mx-2" type="radio" name="Rememberme" id="" />
+          <p class="my-1">Remember me</p>
+        </div>
+        <p class="my-1">Forget password?</p>
+        <button (click)="login()">Login</button>
+      </div>
+      <div class="btn"><p class="btntitle">Enter Your World</p></div>
+      <p class="hidder">
+        Don’t have an account ?
+        <span style="cursor: pointer">
+          <a routerLinkActive="active" routerLink="/register">SignUp</a></span
+        >
+      </p>
+    </div>
+  </div>
+</form> -->
+<form [formGroup]="regValidation">
+  <div class="logo">
+    <img
+      class="logo1"
+      src="../../../assets/images/WhatsApp_Image_2024-02-09_at_23.20 2.png"
+      alt=""
+    />
+    <img
+      class="logo2"
+      src="../../../assets/images/Don’t Touch It’s Art.png"
+      alt=""
+    />
+  </div>
+  <div class="sign" [@paintStrokeAnimation]>
+    <div class="pn">
+      <img class="img" src="assets/images/pngwing 2 (4).png" alt="" />
+    </div>
+    <div class="info">
+      <p class="title">WELCOME ARTIST !</p>
+      <p class="title">Login to your account</p>
+      <div class="email">
+        <label class="d-block">E-mail:</label>
+        <input
+          class="inputt"
+          type="email"
+          name="Email"
+          [(ngModel)]="Email"
+          formControlName="Email"
+          placeholder="Enter your email"
+        />
+        <p
+          class="eror"
+          *ngIf="!EmailValid && regValidation.controls.Email.touched"
+        >
+          Please enter the correct Email
+        </p>
+        <i class="fa-solid fa-envelope iconEmail"></i>
+      </div>
+      <div class="pass">
+        <label class="d-block">Password:</label>
+        <input
+          class="inputt"
+          type="{{ passwordVisible ? 'text' : 'password' }}"
+          [(ngModel)]="Password"
+          formControlName="Password"
+          placeholder="Enter your password"
+        />
+        <ng-container
+          *ngIf="!PasswoedValid && regValidation.controls.Password.touched"
+        >
+          <p class="eror">
+            Password length should be greater than 8 characters
+          </p>
+        </ng-container>
+        <i
+          class="{{
+            passwordVisible ? 'fa fa-eye-slash' : 'fa fa-eye'
+          }} iconEye"
+          (click)="togglePasswordVisibility()"
+        ></i>
+        <i class="fa-solid fa-lock iconPassword"></i>
+      </div>
+      <div
+        class="radio d-flex text-white justify-content-around w-75"
+        style="align-items: center"
+      ></div>
+      <div class="radio remember d-flex text-white justify-content-around w-75">
+        <div class="d-flex" style="align-items: center">
+          <input class="mx-2" type="checkbox" name="Rememberme" />
+          <p class="my-1">Remember me</p>
+        </div>
+        <p class="my-1">Forget password?</p>
+      </div>
+      <div class="btn">
+        <input
+          type="submit"
+          (click)="login()"
+          value="Enter Your World"
+          class="btntitle"
+        />
+      </div>
+      <p class="hidder">
+        Don’t have an account ?
+        <span style="cursor: pointer">
+          <a routerLinkActive="active" routerLink="/register">SignUp</a></span
+        >
+      </p>
+    </div>
+  </div>
+</form>

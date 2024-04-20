@@ -1,0 +1,115 @@
+.userprofile {
+  width: 100vw;
+  height: 90vh;
+  background: radial-gradient(circle at center, #ffffff, #27a0d6);
+  padding-top: 80px;
+  text-align: center;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.font {
+  font-family: "Gill Sans MT";
+  font-weight: bold;
+  color: #023047;
+}
+.titlepage,
+.titlecard {
+  font-size: 36px;
+}
+.titlepage {
+  color: #ffffff;
+  margin-top: 1%;
+  margin-bottom: 4%;
+}
+.datauser {
+  text-align: start;
+  width: 120%;
+}
+.card {
+  background-color: transparent;
+  border: 0 solid;
+}
+.database {
+  padding: 2px;
+  font-size: 18px;
+  text-align: start;
+  color: #023047;
+  z-index: 3;
+}
+.data {
+  font-size: 20px;
+  color: #023047;
+}
+.row {
+  width: 80vw;
+  text-align: end;
+  margin-left: 10%;
+}
+.color {
+  width: 350px;
+  height: 240px;
+}
+.mostafa {
+  width: 280px;
+  height: 250px;
+}
+.edit {
+  position: relative;
+  text-align: center;
+}
+.bttn {
+  color: #ffffff;
+  font-size: 20px;
+  left: 39%;
+  bottom: 1px;
+  position: absolute;
+}
+@media (max-width: 576px) {
+  .userprofile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .photo {
+    width: 317px;
+    height: 317px;
+  }
+  .contain {
+    width: 100%;
+    text-align: center;
+  }
+  .colorr {
+    display: none;
+  }
+  .titlepage {
+    display: none;
+  }
+  .data {
+    font-size: 16px;
+  }
+  .database {
+    font-size: 14px;
+    padding: 1px;
+  }
+  .titlecard {
+    font-size: 24px;
+    margin-bottom: 8%;
+  }
+  .roll {
+    padding-left: 20%;
+  }
+  .datauser {
+    margin: 2%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.image {
+  border-radius: 50%;
+}

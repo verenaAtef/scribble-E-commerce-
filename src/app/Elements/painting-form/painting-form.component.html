@@ -1,0 +1,116 @@
+<!-- <div class="sidebar-and-form-container" [class.show]="showSidebarAndForm">
+  <app-side-nav></app-side-nav>
+  <form
+    [formGroup]="paintingForm"
+    (ngSubmit)="onSubmit()"
+    class="form-container"
+  >
+    <label for="paintingName">Painting Name</label>
+    <input id="paintingName" type="text" formControlName="paintingName" />
+    <div
+      *ngIf="paintingForm.get('paintingName')?.errors?.['required'] && (paintingForm.get('paintingName')?.dirty || paintingForm.get('paintingName')?.touched)"
+    >
+      <div class="error">Painting name is required.</div>
+    </div>
+
+    <label for="artistName">Artist Name</label>
+    <input id="artistName" type="text" formControlName="artistName" />
+    <div
+      *ngIf="paintingForm.get('artistName')?.errors?.['required'] && (paintingForm.get('artistName')?.dirty || paintingForm.get('artistName')?.touched)"
+    >
+      <div class="error">Artist name is required.</div>
+    </div>
+
+    <label for="category">Category</label>
+    <select id="category" formControlName="category">
+      <option value="" disabled selected>Select a category</option>
+      <option value="charcoal">Charcoal</option>
+      <option value="ink">Ink</option>
+      <option value="graffiti">Graffiti</option>
+      <option value="digital">Digital</option>
+    </select>
+    <div
+      *ngIf="paintingForm.get('category')?.errors?.['required'] && (paintingForm.get('category')?.dirty || paintingForm.get('category')?.touched)"
+    >
+      <div class="error">Category is required.</div>
+    </div>
+
+    <label for="price">Price</label>
+    <input id="price" type="number" formControlName="price" />
+    <div
+      *ngIf="paintingForm.get('price')?.errors?.['required'] && (paintingForm.get('price')?.dirty || paintingForm.get('price')?.touched)"
+    >
+      <div class="error">Price is required.</div>
+    </div>
+
+    <button type="submit" [disabled]="paintingForm.invalid">Update</button>
+    <button type="button" class="delete">Delete</button>
+  </form>
+</div> -->
+<div
+  class="sidebar-and-form-container"
+  [class.show]="showSidebarAndForm"
+  [@paintStrokeAnimation]
+>
+  <app-side-nav></app-side-nav>
+  <form
+    [formGroup]="paintingForm"
+    (ngSubmit)="onSubmit()"
+    class="form-container"
+    enctype="multipart/form-data"
+  >
+    <label for="paintingName">Painting Name</label>
+    <input id="paintingName" type="text" formControlName="productName" />
+    <div
+      *ngIf="paintingForm.get('paintingName')?.errors?.['required'] && (paintingForm.get('paintingName')?.dirty || paintingForm.get('paintingName')?.touched)"
+    >
+      <div class="error">Painting name is required.</div>
+    </div>
+
+    <div
+      *ngIf="paintingForm.get('artistName')?.errors?.['required'] && (paintingForm.get('artistName')?.dirty || paintingForm.get('artistName')?.touched)"
+    >
+      <div class="error">Artist name is required.</div>
+    </div>
+
+    <label for="category">Category</label>
+    <select id="category" formControlName="role">
+      <option value="" disabled selected>Select a category</option>
+      <option value="Charcoal">Charcoal</option>
+      <option value="Lnk drawing">Ink</option>
+      <option value="Graffit drawing">Graffiti</option>
+      <option value="Digital drawing">Digital</option>
+    </select>
+    <div
+      *ngIf="paintingForm.get('category')?.errors?.['required'] && (paintingForm.get('category')?.dirty || paintingForm.get('category')?.touched)"
+    >
+      <div class="error">Category is required.</div>
+    </div>
+
+    <label for="price">Price</label>
+    <input id="price" type="number" formControlName="price" />
+    <div
+      *ngIf="paintingForm.get('price')?.errors?.['required'] && (paintingForm.get('price')?.dirty || paintingForm.get('price')?.touched)"
+    >
+      <div class="error">Price is required.</div>
+    </div>
+
+    <label for="image">Image</label>
+    <input
+      id="image"
+      type="file"
+      (change)="onFileChange($event)"
+      multiple
+      name="Image"
+    />
+
+    <button type="submit" [disabled]="paintingForm.invalid">Update</button>
+    <button
+      type="button"
+      class="delete"
+      (click)="deleteProductFunction(productId)"
+    >
+      Delete
+    </button>
+  </form>
+</div>

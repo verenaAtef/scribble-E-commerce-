@@ -1,0 +1,410 @@
+/* .sign{
+    background-color: #219EBC;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    }
+    .logo{
+        position: absolute;
+    }
+    .logo1{
+        position: absolute;
+        top :1vw;
+        left:45vw;
+        width: 10vw;
+    }
+    .logo2{
+        position: absolute;
+        top :5vw;
+        left:42vw;
+        width: 15vw;
+    }
+    .info{
+        width:90vw;
+        padding-top:5vh ;
+        height: 100vh;
+        display: flex ;
+        background-image: url("../../../assets/images/Vector\ \(1\).png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 13%;
+    }
+    .img{
+        width: 40vw; 
+        height: 100vh;
+        
+    }
+    .inputt{
+        border-radius: 10px;
+        border: 1px solid white;
+        width: 25vw;
+        height: 50px;
+        background-color: transparent;
+        color: white;
+        padding-left: 3vw;
+        margin-left: 3vw;
+    }
+    label{
+        font-size: 18px;
+        font-family: 'Gill Sans MT';
+        color: white;
+        margin-bottom: 2px;
+        margin-left: 3vw;
+    }
+    .radio{
+        padding-right: 5vw;
+        padding-bottom: 0;
+        margin-top: 2vh;
+    }
+    .remember{
+        margin-top: 5vh;
+    }
+    .title{
+        font-size: 25px;
+        font-family: 'Gill Sans MT';
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        margin-right:17vw;
+        margin-bottom: 6px;
+    }
+    i{
+        position: fixed;
+        color: rgb(255,255, 255,0.4);
+    }
+    .email,.pass{
+        position: relative;
+        margin-bottom: 1vh;
+    }
+    .iconPassword,.iconEmail {
+        position: absolute;
+        top:7vh ;
+        left:4vw;
+    }
+    .iconEye{
+        position: absolute;
+        top:7vh ;
+        left:25vw;
+    }
+    .hidder{
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Gill Sans MT';
+        width: 30vw;
+        text-align: center;
+    }
+    span{
+        color: #219EBC;
+    }
+    .btn{
+        background-image: url(../../../assets/images/Group\ 61.png);
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position:center;
+        width: 20vw;
+        height: 6vh;
+        margin-left:6vw;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+        text-align: center;
+        padding-top:1vh;
+        padding-left: 1vw;
+    }
+    .btntitle{
+        font-family: 'Gill Sans MT';
+        color:#023047 ;
+        font-size: 16px;
+        font-weight: bold; 
+        margin-right: 3vw;
+    }
+    .eror{
+        color: rgb(244, 55, 55);
+        font-size: 20px;
+        margin-left: 40px;
+        margin-bottom: 0;
+    }
+    @media (max-width: 576px) {
+        .info{
+            width: 100vw;
+            padding: 0;
+            padding-left: 19vw;
+            margin: 0;
+            padding-top: 6vh;
+        }
+        .sign{
+            margin: 0;
+            padding: 0;
+        }
+        .radio{
+            width: 70vw !important;
+            margin: 0%;
+            margin-right: 5vw;
+            padding: 0;
+            align-items: start !important;
+        }
+        .logo{
+            padding: 0;
+        }
+        .eror{
+            font-size: 12px;
+        }
+        label{
+            font-size: 18px;
+            font-family: 'Gill Sans MT';
+            color: white;
+            margin-bottom: 1vh;
+            margin-left: 3vw;
+        }
+        .pn{
+            display: none;
+        }
+        .inputt{
+            width: 50vw;
+            padding-left: 6vw;
+        }
+        .title{
+            font-size: 20px;
+            margin-right: 25vw;
+        }
+        .iconEye{
+            left: 48vw ;
+            top: 8vh;
+        }
+        .iconPassword,.iconEmail {
+            top: 8vh;
+            left: 5vw;
+        }
+        .btn{
+            font-size: 14px;
+            width: 40vw;
+        }
+        .hidder{
+            width: 50vw;
+        }
+        .logo1{
+            width: 30vw;
+            left: 33vw;
+            margin: 0;
+        }
+        .logo2{
+            width: 30vw;
+            left: 33vw;
+            top: 7vh;
+            margin: 0;
+        }
+    } */
+.sign {
+  background-color: #219ebc;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.logo {
+  position: absolute;
+}
+.logo1 {
+  position: absolute;
+  top: 1vw;
+  left: 45vw;
+  width: 10vw;
+}
+.logo2 {
+  position: absolute;
+  top: 5vw;
+  left: 42vw;
+  width: 15vw;
+}
+.info {
+  width: 90vw;
+  padding-top: 5vh;
+  height: 100vh;
+  display: flex;
+  background-image: url("../../../assets/images/Vector\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 13%;
+}
+.img {
+  width: 40vw;
+  height: 100vh;
+}
+.inputt {
+  border-radius: 10px;
+  border: 1px solid white;
+  width: 25vw;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  padding-left: 3vw;
+  margin-left: 3vw;
+}
+input {
+  background-color: transparent;
+  border: none;
+}
+label {
+  font-size: 18px;
+  font-family: "Gill Sans MT";
+  color: white;
+  margin-bottom: 2px;
+  margin-left: 3vw;
+}
+.radio {
+  padding-right: 5vw;
+  padding-bottom: 0;
+  margin-top: 2vh;
+}
+.remember {
+  margin-top: 5vh;
+}
+.title {
+  font-size: 25px;
+  font-family: "Gill Sans MT";
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-right: 17vw;
+  margin-bottom: 6px;
+}
+i {
+  position: fixed;
+  color: rgb(255, 255, 255, 0.4);
+}
+.email,
+.pass {
+  position: relative;
+  margin-bottom: 1vh;
+}
+.iconPassword,
+.iconEmail {
+  position: absolute;
+  top: 7vh;
+  left: 4vw;
+}
+.iconEye {
+  position: absolute;
+  top: 7vh;
+  left: 25vw;
+}
+.hidder {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Gill Sans MT";
+  width: 30vw;
+  text-align: center;
+}
+span {
+  color: #219ebc;
+}
+.btn {
+  background-image: url(../../../assets/images/Group\ 61.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20vw;
+  height: 6vh;
+  margin-left: 6vw;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  text-align: center;
+  padding-top: 1vh;
+  padding-left: 1vw;
+}
+.btntitle {
+  font-family: "Gill Sans MT";
+  color: #023047;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 3vw;
+}
+.eror {
+  color: rgb(244, 55, 55);
+  font-size: 20px;
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .info {
+    width: 100vw;
+    padding: 0;
+    padding-left: 19vw;
+    margin: 0;
+    padding-top: 6vh;
+  }
+  .sign {
+    margin: 0;
+    padding: 0;
+  }
+  .radio {
+    width: 70vw !important;
+    margin: 0%;
+    margin-right: 5vw;
+    padding: 0;
+    align-items: start !important;
+  }
+  .logo {
+    padding: 0;
+  }
+  .eror {
+    font-size: 12px;
+  }
+  label {
+    font-size: 18px;
+    font-family: "Gill Sans MT";
+    color: white;
+    margin-bottom: 1vh;
+    margin-left: 3vw;
+  }
+  .pn {
+    display: none;
+  }
+  .inputt {
+    width: 50vw;
+    padding-left: 6vw;
+  }
+  .title {
+    font-size: 20px;
+    margin-right: 25vw;
+  }
+  .iconEye {
+    left: 48vw;
+    top: 60%;
+  }
+  .iconPassword,
+  .iconEmail {
+    top: 60%;
+    left: 5vw;
+  }
+  .btn {
+    font-size: 14px;
+    width: 40vw;
+  }
+  .hidder {
+    width: 50vw;
+  }
+  .logo1 {
+    width: 30vw;
+    left: 33vw;
+    margin: 0;
+  }
+  .logo2 {
+    width: 30vw;
+    left: 33vw;
+    top: 7vh;
+    margin: 0;
+  }
+}
+.custom-toast {
+  background-color: #ff0000;
+  color: #ffffff;
+  border-radius: 10px;
+  width: 150px !important;
+}

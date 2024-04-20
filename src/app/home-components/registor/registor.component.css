@@ -1,0 +1,587 @@
+/* .sign{
+    background-color: #219EBC;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    }
+    .logo{
+        position: absolute;
+    }
+    .logo1{
+        position: absolute;
+        top :1vw;
+        left:45vw;
+        width: 10vw;
+    }
+    .logo2{
+        position: absolute;
+        top :5vw;
+        left:42vw;
+        width: 15vw;
+    }
+    .info{
+        width:60vw;
+        height: 100vh;
+        display: flex ;
+        background-image: url("../../../assets/images/Vector.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 9%;
+    }
+    .img{
+        width: 50vw; 
+        height: 100vh;
+        float:right;
+        margin-left: 20%;
+    }
+    input{
+        border-radius: 10px;
+        border: 1px solid white;
+        width: 25vw;
+        height: 50px;
+        background-color: transparent;
+        color: white;
+        padding-left: 3vw;
+        margin-left: 3vw;
+    }
+    label{
+        font-size: 18px;
+        font-family: 'Gill Sans MT';
+        color: white;
+        margin-bottom: 2px;
+        margin-left: 3vw;
+    }
+    .title{
+        font-size: 25px;
+        font-family: 'Gill Sans MT';
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        margin-right:17vw
+    }
+    i{
+        position: fixed;
+        color: rgb(255,255, 255,0.4);
+    }
+    .username , .email,.pass{
+        position: relative;
+        margin-bottom: 1vh;
+    }
+    .iconName  , .iconPassword,.iconEmail {
+        position: absolute;
+        top:7vh ;
+        left:4vw;
+    }
+    .iconEye{
+        position: absolute;
+        top:7vh ;
+        left:25vw;
+    }
+    .hidder{
+        color: white;
+        /* margin-left: 1vw; */
+/* font-size: 14px;
+        font-weight: bold;
+        font-family: 'Gill Sans MT';
+        width: 30vw;
+        text-align: center;
+    }
+    span{
+        color: #219EBC;
+    }
+    .btn{
+        background-image: url(../../../assets/images/Group\ 61.png);
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position:center;
+        width: 20vw;
+        height: 6vh;
+        margin-left:6vw;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+        text-align: center;
+        padding-top:1vh;
+        padding-left: 1vw;
+    }
+    .btntitle{
+        font-family: 'Gill Sans MT';
+        color:#023047 ;
+        font-size: 16px;
+        font-weight: bold; 
+        margin-right: 3vw;
+    }
+    .eror{
+        color: rgb(244, 55, 55);
+        font-size: 20px;
+        margin-left: 40px;
+        margin-bottom: 0;
+    }
+    @media (max-width: 576px) {
+        .info{
+            width: 100vw;
+            padding: auto;
+            padding-left: 19vw;
+        }
+        .eror{
+            font-size: 12px;
+        }
+        label{
+            font-size: 18px;
+            font-family: 'Gill Sans MT';
+            color: white;
+            margin-bottom: 1vh;
+            margin-left: 3vw;
+        }
+        .pn{
+            display: none;
+        }
+        input{
+            width: 50vw;
+            padding-left: 6vw;
+        }
+        .title{
+            font-size: 25px;
+            margin-right: 25vw;
+        }
+        .iconEye{
+            left: 48vw ;
+            top: 6vh;
+        }
+         .iconPassword,.iconEmail {
+            top: 6vh;
+            left: 5vw;
+        }
+        .iconName {
+            top: 37.5vh;
+            left: 25vw;
+        }
+        .btn{
+            font-size: 14px;
+            width: 40vw;
+        }
+        .hidder{
+            width: 50vw;
+        }
+        .logo1{
+            width: 30vw;
+            left: 33vw;
+        }
+        .logo2{
+            width: 30vw;
+            left: 33vw;
+            top: 7vh;
+        }
+    }  */
+/* .sign {
+  background-color: #219ebc;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.logo {
+  position: absolute;
+}
+.logo1 {
+  position: absolute;
+  top: 1vw;
+  left: 45vw;
+  width: 10vw;
+}
+.logo2 {
+  position: absolute;
+  top: 5vw;
+  left: 42vw;
+  width: 15vw;
+}
+.info {
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  background-image: url("../../../assets/images/Vector.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 9%;
+}
+.img {
+  width: 50vw;
+  height: 100vh;
+  float: right;
+  margin-left: 20%;
+}
+input {
+  border-radius: 10px;
+  border: 1px solid white;
+  width: 25vw;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  padding-left: 3vw;
+  margin-left: 3vw;
+}
+label {
+  font-size: 18px;
+  font-family: "Gill Sans MT";
+  color: white;
+  margin-bottom: 2px;
+  margin-left: 3vw;
+}
+.title {
+  font-size: 25px;
+  font-family: "Gill Sans MT";
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-right: 17vw;
+}
+i {
+  position: fixed;
+  color: rgb(255, 255, 255, 0.4);
+}
+.username,
+.email,
+.pass {
+  position: relative;
+  margin-bottom: 1vh;
+}
+.iconName,
+.iconPassword,
+.iconEmail {
+  position: absolute;
+  top: 47px;
+  left: 4vw;
+}
+.iconEye {
+  position: absolute;
+  top: 47px;
+  left: 25vw;
+}
+.hidder {
+  color: white;
+
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Gill Sans MT";
+  width: 30vw;
+  text-align: center;
+}
+span {
+  color: #219ebc;
+}
+.btn {
+  background-image: url(../../../assets/images/Group\ 61.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20vw;
+  height: 6vh;
+  margin-left: 6vw;
+  text-align: left;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  /* text-align: center; */
+/* padding-top: 1vh;
+  padding-left: 1vw;
+}
+.btntitle {
+  font-family: "Gill Sans MT";
+  color: #023047;
+  font-size: 16px;
+  font-weight: bold;
+  width: auto;
+  padding: 0;
+  padding-bottom: 10%;
+  border: none;
+}
+.eror {
+  color: rgb(244, 55, 55);
+  font-size: 20px;
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .info {
+    width: 100vw;
+    padding: auto;
+    padding-left: 19vw;
+  }
+  .eror {
+    font-size: 12px;
+  }
+  label {
+    font-size: 18px;
+    font-family: "Gill Sans MT";
+    color: white;
+    margin-bottom: 1vh;
+    margin-left: 3vw;
+  }
+  .pn {
+    display: none;
+  }
+  input {
+    width: 50vw;
+    padding-left: 6vw;
+  }
+  .title {
+    font-size: 25px;
+    margin-right: 25vw;
+  }
+  .iconEye {
+    left: 48vw;
+    top: 50px;
+  }
+  .iconName,
+  .iconPassword,
+  .iconEmail {
+    top: 53px;
+    left: 5vw;
+  }
+  .btn {
+    font-size: 14px;
+    width: 40vw;
+  }
+  .hidder {
+    width: 50vw;
+  }
+  .logo1 {
+    width: 30vw;
+    left: 33vw;
+  }
+  .logo2 {
+    width: 30vw;
+    left: 33vw;
+    top: 7vh;
+  }
+}  */
+.sign {
+  background-color: #219ebc;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.logo {
+  position: absolute;
+}
+.logo1 {
+  position: absolute;
+  top: 1vw;
+  left: 45vw;
+  width: 10vw;
+}
+.logo2 {
+  position: absolute;
+  top: 5vw;
+  left: 42vw;
+  width: 15vw;
+}
+.info {
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  background-image: url("../../../assets/images/Vector.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 9%;
+}
+.img {
+  width: 50vw;
+  height: 100vh;
+  float: right;
+  margin-left: 20%;
+}
+input {
+  border-radius: 10px;
+  border: 1px solid white;
+  width: 25vw;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  padding-left: 3vw;
+  margin-left: 3vw;
+}
+label {
+  font-size: 18px;
+  font-family: "Gill Sans MT";
+  color: white;
+  margin-bottom: 2px;
+  margin-left: 3vw;
+}
+.title {
+  font-size: 25px;
+  font-family: "Gill Sans MT";
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-right: 17vw;
+}
+i {
+  position: fixed;
+  color: rgb(255, 255, 255, 0.4);
+}
+.username,
+.email,
+.pass {
+  position: relative;
+  margin-bottom: 1vh;
+}
+.iconName,
+.iconPassword,
+.iconEmail {
+  position: absolute;
+  top: 40px;
+  left: 4vw;
+}
+.iconEye {
+  position: absolute;
+  top: 47px;
+  left: 25vw;
+}
+.hidder {
+  color: white;
+
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Gill Sans MT";
+  width: 30vw;
+  text-align: center;
+}
+span {
+  color: #219ebc;
+}
+.btn {
+  background-image: url(../../../assets/images/Group\ 61.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20vw;
+  height: 6vh;
+  margin-left: 6vw;
+  text-align: left;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  padding-top: 1vh;
+  padding-left: 1vw;
+}
+.btntitle {
+  font-family: "Gill Sans MT";
+  color: #023047;
+  font-size: 16px;
+  font-weight: bold;
+  width: auto;
+  padding: 0;
+  padding-bottom: 10%;
+  border: none;
+}
+.eror {
+  color: rgb(244, 55, 55);
+  font-size: 20px;
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+@media (max-width: 800px) {
+  .info {
+    width: 100vw;
+    padding: auto;
+    padding-left: 25vw;
+  }
+  .eror {
+    font-size: 12px;
+  }
+  label {
+    font-size: 18px;
+    font-family: "Gill Sans MT";
+    color: white;
+    margin-bottom: 1vh;
+    margin-left: 3vw;
+  }
+  .pn {
+    display: none;
+  }
+  input {
+    width: 50vw;
+    padding-left: 6vw;
+  }
+  .title {
+    font-size: 25px;
+    margin-right: 25vw;
+  }
+  .iconEye {
+    left: 48vw;
+    top: 50px;
+  }
+  .iconName,
+  .iconPassword,
+  .iconEmail {
+    top: 40px;
+    left: 5vw;
+  }
+  .btn {
+    font-size: 14px;
+    width: 40vw;
+  }
+  .hidder {
+    width: 50vw;
+  }
+  .logo1 {
+    width: 30vw;
+    left: 33vw;
+  }
+  .logo2 {
+    width: 30vw;
+    left: 33vw;
+    top: 7vh;
+  }
+}
+@media (max-width: 500px) {
+  .info {
+    padding-left: 15vw;
+    border: 1px solid !important;
+  }
+  label {
+    font-size: 15px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .iconName,
+  .iconPassword,
+  .iconEmail {
+    top: 40px;
+  }
+  input {
+    height: 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .title {
+    font-size: 22px;
+  }
+  input {
+    height: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .title {
+    font-size: 18px;
+  }
+  input {
+    height: 35px;
+  }
+  .btntitle {
+    font-size: 12px;
+  }
+  .hidder {
+    font-size: 10px;
+  }
+  i {
+    font-size: 12px;
+  }
+}

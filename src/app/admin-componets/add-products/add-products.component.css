@@ -1,0 +1,114 @@
+/* product-form.component.css
+.addProduct {
+  padding-top: 40px;
+  background-color: rgb(39, 160, 214, 0.9);
+  height: 100vh;
+}
+.product-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ffb703;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #023047;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .product-form {
+    max-width: 100%;
+  }
+} */
+.addProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#fff, #007bff);
+  height: 100vh;
+}
+
+.product-form {
+  max-width: 446px;
+  width: 100%;
+  padding: 22px;
+  background-color: #ffffff46;
+  border-radius: 20px;
+  color: #023047;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #023047;
+  border-radius: 10px;
+  color: #023047;
+  background-color: transparent;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffb703;
+  color: #023047;
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #023047;
+  color: #ced4da;
+}

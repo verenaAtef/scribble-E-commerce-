@@ -1,0 +1,94 @@
+.editProfile {
+  margin: 20px auto;
+  width: 50%;
+}
+
+.form {
+  max-width: 446px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 22px;
+  background-color: #ffffff46;
+  border-radius: 20px;
+  color: #023047;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.Input {
+  margin-bottom: 15px;
+}
+
+.Input label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.Input input,
+.Input select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.btn button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn_rest {
+  background-color: rgb(255, 255, 255, 0);
+  border: 1px solid #023047 !important;
+}
+
+.btn_Update {
+  background-color: #023047;
+  color: #fff;
+  border: 1px solid #023047 !important;
+}
+.btn_Update:hover {
+  background-color: rgb(2, 48, 71, 0);
+  color: #023047;
+}
+
+.selectImage {
+  display: block;
+  margin-top: 10px;
+}
+
+.selectImage img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-top: 10px;
+}
+#photoPreview {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#fff, #007bff);
+  height: 100vh;
+}
+.card-img-top {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.card-img-top:hover {
+  transform: scale(1.2);
+}

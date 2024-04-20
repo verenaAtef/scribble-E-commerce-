@@ -1,0 +1,80 @@
+<app-side-nav></app-side-nav>
+<div class="products">
+  <div
+    class="d-flex w-lg-100 w-sm-25 justify-content-around align-items-center nav"
+  >
+    <div class="d-flex justify-content-around align-items-center w-25 select">
+      <label for="sorted" class="fw-bold">Filter</label>
+      <select name="filter" id="filted" (change)="filterProducts($event)">
+        <option value="">All</option>
+        <optgroup label="Category">
+          <option value="Charcoal">Charcoal</option>
+          <option value="Lnk drawing">Ink</option>
+          <option value="Graffit drawing">Graffiti</option>
+          <option value="Digital drawing">Digital</option>
+        </optgroup>
+      </select>
+    </div>
+    <div class="d-flex justify-content-around align-items-center w-25 select">
+      <label for="" class="fw-bold">Sorted By:</label>
+      <select
+        name="sortBy"
+        [(ngModel)]="sortBy"
+        (change)="onSortChange($event)"
+      >
+        <option value="none" selected>None</option>
+        <option value="productName1">Name A-Z</option>
+        <option value="productName-1">Name Z-A</option>
+        <option value="price-1">High Price</option>
+        <option value="price1">Low Price</option>
+      </select>
+    </div>
+
+    <a
+      routerLinkActive="active"
+      routerLink="/admin/addProduct"
+      class="btnAdd text-sm-4 text-md-5 text-lg-5 text-center"
+      >Add Product</a
+    >
+  </div>
+  <div class="d-flex flex-wrap cards">
+    <div
+      card
+      *ngFor="let item of allProducts"
+      class="card text-center m-1"
+      style="width: 14rem; height: 17rem; border-radius: 20px"
+      [@paintStrokeAnimation]="item"
+    >
+      <div *ngIf="!allProducts">No Items</div>
+      <div class="text-end px-3">
+        <i
+          class="fa-regular fa-pen-to-square icon1"
+          (click)="showEditForm(item)"
+        ></i>
+      </div>
+      <img
+        class="card-img-top image-hover-effect"
+        [src]="getImageUrl(item.Image)"
+        style="border-radius: 20px; height: 9rem"
+        alt="..."
+      />
+      <div class="card-body" style="height: 4rem">
+        <h5 class="card-title">{{ item.productName }}</h5>
+        <p class="card-text m-0">{{ item.description }}</p>
+        <p class="card-text">
+          {{ item.price }}
+          <i
+            class="fas fa-trash-alt icon2"
+            (click)="deleteProduct(item._id)"
+          ></i>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<app-painting-form
+  *ngIf="showEditFormFlag"
+  [product]="selectedUser"
+  (updateProduct)="updateProductDetails($event)"
+  [deleteProductFunction]="deleteProduct"
+></app-painting-form>

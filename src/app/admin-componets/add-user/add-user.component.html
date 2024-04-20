@@ -1,0 +1,52 @@
+<!-- product-form.component.html -->
+<app-side-nav></app-side-nav>
+<div class="addProduct">
+  <div class="product-form" [@paintStrokeAnimation]>
+    <h2>Add New User</h2>
+    <form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="usertName">UserName</label>
+        <input
+          type="text"
+          id="userName"
+          name="userName"
+          [(ngModel)]="User.userName"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="price">Email:</label>
+        <input
+          type="email"
+          id="Email"
+          name="Email"
+          [(ngModel)]="User.Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="price">Password:</label>
+        <input
+          type="Password"
+          id="Password"
+          name="Password"
+          [(ngModel)]="User.Password"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image:</label>
+        <input
+          class="imageUser"
+          type="file"
+          id="image"
+          name="image"
+          accept="image/*"
+          (change)="onFileSelected($event)"
+        />
+      </div>
+      <button type="submit">Add User</button>
+    </form>
+  </div>
+</div>

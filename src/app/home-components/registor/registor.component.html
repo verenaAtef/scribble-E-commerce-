@@ -1,0 +1,90 @@
+<form [formGroup]="regValidation" [@paintStrokeAnimation]>
+  <div class="logo">
+    <img
+      class="logo1"
+      src="../../../assets/images/WhatsApp_Image_2024-02-09_at_23.20 2.png"
+      alt=""
+    />
+    <img
+      class="logo2"
+      src="../../../assets/images/Don’t Touch It’s Art.png"
+      alt=""
+    />
+  </div>
+  <div class="sign">
+    <div class="info">
+      <p class="title">Sign up now for free !</p>
+      <div class="username">
+        <label class="d-block">User Name:</label>
+        <input
+          type="text"
+          formControlName="userName"
+          [(ngModel)]="userName"
+          placeholder="Enter your name"
+        />
+        <p
+          class="eror"
+          *ngIf="!NameValid && regValidation.controls.userName.dirty"
+        >
+          Please enter Name Required & 3 &lt; name.length &lt; 10
+        </p>
+        <i class="fa-regular fa-user person iconName"></i>
+      </div>
+      <div class="email">
+        <label class="d-block">E-mail:</label>
+        <input
+          type="email"
+          name="Email"
+          [(ngModel)]="Email"
+          formControlName="Email"
+          placeholder="Enter your email"
+        />
+        <p
+          class="eror"
+          *ngIf="!EmailValid && regValidation.controls.Email.touched"
+        >
+          Please enter the correct Email
+        </p>
+        <i class="fa-solid fa-envelope iconEmail"></i>
+      </div>
+      <div class="pass">
+        <label class="d-block">Password:</label>
+        <input
+          type="{{ passwordVisible ? 'text' : 'password' }}"
+          formControlName="Password"
+          [(ngModel)]="Password"
+          placeholder="Enter your password"
+        />
+        <p
+          class="eror"
+          *ngIf="!PasswoedValid && regValidation.controls.Password.touched"
+        >
+          Password length should be greater than 8 characters
+        </p>
+        <!-- <i
+          class="{{
+            passwordVisible ? 'fa fa-eye-slash' : 'fa fa-eye'
+          }} iconEye"
+          (click)="togglePasswordVisibility()"
+        ></i> -->
+        <i class="fa-solid fa-lock iconPassword"></i>
+      </div>
+      <div class="btn">
+        <input
+          type="submit"
+          (click)="signup()"
+          value="Join Our World"
+          class="btntitle"
+        />
+      </div>
+      <p class="hidder">
+        Do you have an account ?<span style="cursor: pointer">
+          <a routerLinkActive="active" routerLink="/login">Login</a></span
+        >
+      </p>
+    </div>
+    <div class="pn">
+      <img class="img" src="../../../assets/images/pngwing 2 (2).png" alt="" />
+    </div>
+  </div>
+</form>

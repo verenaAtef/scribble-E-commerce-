@@ -1,0 +1,8 @@
+.file-link {
+    color: #023047; 
+    text-decoration: underline; 
+    cursor: pointer; 
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}

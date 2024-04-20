@@ -1,0 +1,109 @@
+
+.side-nav{
+    width: 280px;
+    height: 100vh;
+    background-color: #023047;
+    position: fixed;
+    top :0;
+    left :0;
+    z-index: 4;
+    border-radius: 0 40px 40px 0;
+}
+.side-nav img{
+    width: 114px;
+    height: 40px;
+    margin-left: 25%;
+    margin-top: 2.5vw;
+}
+a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+.side-nav-mid-div ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+    padding-left: 0;
+}
+.side-nav-mid-div ul li{
+    padding-left: 23%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    height: 45px;
+}
+.side-nav-mid-div ul li a{
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.side-nav-mid-div ul li:hover{
+    color: #FFB703;
+    border-left: 3px solid #FFB703;
+}
+.side-nav-mid-div ul li a:hover{
+    color: #FFB703;
+}
+.side-nav-bottom-div{
+    margin-top: 100px;
+}
+.side-nav-bottom-div ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+    padding-left: 0;
+}
+.side-nav-bottom-div ul li{
+    padding-left: 23%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    height: 45px;
+}
+.side-nav-bottom-div ul li a{
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.side-nav-bottom-div ul li:hover{
+    color: #FFB703;
+    border-left: 3px solid #FFB703;
+}
+.side-nav-bottom-div ul li a:hover{
+    color: #FFB703;
+}
+.upper-nav-mob{
+    display: none;
+}
+@media (max-width:576px) {
+    .upper-nav-mob{
+        z-index: 2;
+        display: block;
+        display: flex;
+        width: 100%;
+        height: 40px;
+        justify-content: flex-start;
+        gap: 75% ;
+        padding-left: 30px;
+        align-items: center;
+        background-color: #023047;
+        color: #ffff;
+    }
+    .side-nav{
+        display: none;
+    }
+ 
+}

@@ -1,0 +1,85 @@
+<app-side-nav></app-side-nav>
+<div class="editProfile">
+  <form class="form" [formGroup]="editProfile">
+    <app-upload-image></app-upload-image>
+    <label class="selectImage">Selected Photo</label>
+    <div class="data_form">
+      <div class="Input">
+        <label for="userName">Username</label>
+        <input
+          [(ngModel)]="userName"
+          type="text"
+          id="userName"
+          placeholder="Enter your Name"
+          formControlName="userName"
+        />
+        <div
+          *ngIf="!Namevalid && !userName"
+          style="color: red; font-size: 14px"
+        >
+          Should enter name should be >3 and not have space "samahsalah"
+        </div>
+      </div>
+
+      <div class="Input">
+        <label for="Email">Email</label>
+        <input
+          [(ngModel)]="Email"
+          type="text"
+          id="Email"
+          placeholder="Enter Email"
+          formControlName="Email"
+        />
+        <div *ngIf="!Emailvalid" style="color: red; font-size: 14px">
+          should be "samahshgh.com"
+        </div>
+      </div>
+      <!-- Add validation message for Phone -->
+      <div class="Input">
+        <label for="Phone">Phone</label>
+        <input
+          [(ngModel)]="Phone"
+          type="text"
+          id="Phone"
+          placeholder="Enter your Phone"
+          formControlName="Phone"
+        />
+        <div *ngIf="!Phonevalid" style="color: red; font-size: 14px">
+          should be Egyption number 010||011||012
+        </div>
+      </div>
+      <!-- Add validation message for Age -->
+      <div class="Input">
+        <label for="Age">Age</label>
+        <input
+          [(ngModel)]="Age"
+          type="text"
+          id="Age"
+          placeholder="Enter your Age"
+          formControlName="Age"
+        />
+        <div *ngIf="!Agevalid" style="color: red; font-size: 14px">
+          Age between 4:80
+        </div>
+      </div>
+
+      <div class="Input">
+        <label for="Password">Password</label>
+        <input
+          [(ngModel)]="Password"
+          type="password"
+          id="Password"
+          placeholder="Enter your Password"
+          formControlName="Password"
+        />
+        <div *ngIf="!Passwordvalid" style="color: red; font-size: 14px">
+          password should be string and length greater than 8
+        </div>
+      </div>
+      <div class="btn">
+        <button (click)="reset()" class="btn_rest">Reset</button>
+        <button (click)="upload()" class="btn_Update">Update</button>
+      </div>
+    </div>
+  </form>
+</div>

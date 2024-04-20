@@ -1,0 +1,127 @@
+<app-navbar></app-navbar>
+<div class="cont">
+  <div class="about">
+    <div class="layar">
+      <p class="aboutTxt">SCRIPPLE</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="container">
+      <div class="d-flex cardflex">
+        <p class="cardtitle2 d-none">Who We are?</p>
+        <img
+          [@paintStrokeAnimation]
+          src="assets/images/about1.png"
+          class="card-img-top imgCard"
+          alt="..."
+        />
+        <div class="cardbody">
+          <p class="cardtitle">Who We are?</p>
+          <p class="cardtext">
+            " Scripple is e-commerce business for Artists to show there painting
+            to the whole world and make users buy there painting so if you want
+            to join our world please signup . It is a long established fact that
+            a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has
+            a more-or-less normal distribution of letters, as opposed to using
+            'Content here, content here', making it look like readable English"
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h1 class="text-center title">Why Choose Us?</h1>
+    <div class="row contain">
+      <div class="col">
+        <div class="icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <p class="gridTitle text-center">Easy to find</p>
+        <div class="gridt">
+          <p class="gridtext">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon">
+          <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+        <p class="gridTitle text-center">Best offers</p>
+        <div class="gridt">
+          <p class="gridtext">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon">
+          <i class="fa-solid fa-face-smile"></i>
+        </div>
+        <p class="gridTitle text-center">Friendly Vibes</p>
+        <div class="gridt">
+          <p class="gridtext">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ourteam d-flex">
+    <div class="photo">
+      <p class="teamTitle">Meet our team</p>
+      <div>
+        <div>
+          <img class="image" [src]="img" alt="" />
+          <p class="data">{{ name }}</p>
+          <p class="data">{{ description }}</p>
+        </div>
+        <div class="iconn">
+          <i class="fa-brands fa-upwork iconn"></i>
+          <i class="fa-brands fa-linkedin iconn"></i>
+          <i class="fa-brands fa-whatsapp iconn"></i>
+          <i class="fa-brands fa-github iconn"></i>
+        </div>
+      </div>
+    </div>
+    <div class="paint">
+      <img
+        (click)="handleClick('Sarah Hassan')"
+        class="team sara"
+        src="assets\images\Mask group (1).png"
+        alt=""
+      />
+      <img
+        (click)="handleClick('Merna Awad')"
+        class="team merna"
+        src="assets\images\Mask group (2).png"
+        alt=""
+      />
+      <img
+        (click)="handleClick('Mostafa Ahmed')"
+        class="team mostafa"
+        src="assets\images\Mask group.png"
+        alt=""
+      />
+      <img
+        (click)="handleClick('Samah Salah')"
+        class="team samah"
+        src="../../../assets/images/Admin-img.png"
+        alt=""
+      />
+      <img
+        (click)="handleClick('Verena Atef')"
+        class="team verena"
+        src="assets\images\Mask group (4).png"
+        alt=""
+      />
+    </div>
+  </div>
+</div>

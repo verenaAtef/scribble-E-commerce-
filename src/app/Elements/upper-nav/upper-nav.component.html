@@ -1,0 +1,28 @@
+<div class="nav">
+  <div class="nav-container">
+    <div class="icon">
+      <a href="#"><i class="fa-solid fa-comment"></i></a>
+      <div class="notify-number">
+        {{ notify }}
+      </div>
+    </div>
+    <div class="icon">
+      <a href="#"><i class="fa-solid fa-bell"></i></a>
+      <div class="notify-number">
+        {{ massage }}
+      </div>
+    </div>
+    <div>
+      <a href=""><img [src]="img" alt="" /></a>
+    </div>
+    <div>
+      <a
+        href="#"
+        (click)="logout()"
+        class="profile-name"
+        style="cursor: pointer"
+        >Logout</a
+      >
+    </div>
+  </div>
+</div>

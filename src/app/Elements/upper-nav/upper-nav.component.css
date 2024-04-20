@@ -1,0 +1,44 @@
+.nav {
+  background-color: #97d0ea !important;
+  width: 100%;
+  height: 60px;
+  justify-content: flex-end;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  margin-right: 8%;
+  gap: 20px;
+}
+.icon {
+  position: relative;
+}
+.notify-number {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 0.5vw;
+  background-color: #c92121;
+  border-radius: 50%;
+  width: 0.75vw;
+  color: #ffffff;
+  text-align: center;
+}
+.fa-comment {
+  font-size: 1.75vw;
+  color: #d9d9d9;
+}
+.fa-bell {
+  font-size: 1.75vw;
+  color: #d9d9d9;
+}
+.profile-name {
+  text-decoration: none;
+  color: #316078;
+  font-size: 1vw;
+}
+@media (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
+}

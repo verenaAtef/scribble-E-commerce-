@@ -1,0 +1,78 @@
+<div style="display: flex" class="edit">
+  <app-side-nav></app-side-nav>
+  <div class="editProfile" [@paintStrokeAnimation]>
+    <form
+      class="form"
+      [formGroup]="editProfile"
+      (ngSubmit)="onSubmit()"
+      enctype="multipart/form-data"
+    >
+      <label for="photoUpload" id="photoPreviewLabel">
+        <div>
+          <img
+            [src]="getImageUrl()"
+            class="card-img-top image-hover-effect"
+            style="border-radius: 50%; height: 100px; width: 100px"
+            alt="User Image"
+          />
+        </div>
+      </label>
+      <input
+        type="file"
+        id="photoUpload"
+        accept="image/*"
+        (change)="onFileSelected($event)"
+        style="display: none"
+        formControlName="Image"
+      />
+
+      <!-- Username -->
+      <div class="Input">
+        <label for="userName">Username</label>
+        <input
+          type="text"
+          id="userName"
+          placeholder="Enter your Name"
+          formControlName="userName"
+          required
+        />
+      </div>
+      <!-- Email -->
+      <div class="Input">
+        <label for="Email">Email</label>
+        <input
+          type="text"
+          id="Email"
+          placeholder="Enter Email"
+          formControlName="Email"
+          required
+        />
+      </div>
+
+      <!-- isActive -->
+      <div class="Input">
+        <label for="isActive">isActive</label>
+        <select id="isActive" formControlName="isActive" required>
+          <option value="true">true</option>
+          <option value="false">False</option>
+        </select>
+      </div>
+
+      <!-- Role -->
+      <div class="Input">
+        <label for="role">Role</label>
+        <select id="role" formControlName="role" required>
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+        </select>
+        <!-- Add validation and error messages for role if needed -->
+      </div>
+
+      <!-- Button Group -->
+      <div class="btn">
+        <button type="button" (click)="reset()" class="btn_rest">Reset</button>
+        <button type="submit" class="btn_Update">Update User</button>
+      </div>
+    </form>
+  </div>
+</div>

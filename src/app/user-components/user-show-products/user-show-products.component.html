@@ -1,0 +1,24 @@
+<table id="table" class="table table-hover table-mc-light-blue">
+  <thead>
+    <tr>
+      <th>ProductName</th>
+      <th>Price</th>
+      <th>role</th>
+      <th>Descriotion</th>
+      <th>image</th>
+      <th>Update</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of allProducts">
+      <td data-title="Name">{{ item.productName }}</td>
+      <td data-title="Name">{{ item.price }}</td>
+      <td data-title="role">{{ item.role }}</td>
+      <td data-title="Name">{{ item.description }}</td>
+      <td data-title="Name">{{ item.image }}</td>
+      <th style="color: blue">Update</th>
+      <th style="color: red">Delete</th>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,43 @@
+<div class="side-nav">
+  <img src="assets/images/logo-img.png" alt="" />
+  <div class="side-nav-mid-div">
+    <ul>
+      <li>
+        <a routerLinkActive="active" routerLink="/Homedashboard/:id"
+          ><i class="fa-solid fa-house"></i>Dashboard</a
+        >
+      </li>
+      <li>
+        <a routerLinkActive="active" routerLink="/admin/users"
+          ><i class="fa-solid fa-user"></i>Users</a
+        >
+      </li>
+      <li>
+        <a routerLinkActive="active" routerLink="/admin/showproducts"
+          ><i class="fa-solid fa-table-cells"></i>Products</a
+        >
+      </li>
+      <li>
+        <a routerLinkActive="active" routerLink="/adminProfile/:id"
+          ><i class="fa-solid fa-address-card"></i>Profile</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-bottom-div">
+    <ul>
+      <li>
+        <a routerLinkActive="active" routerLink="/admin/editprofile"
+          ><i class="fa-solid fa-gear"></i>Setting</a
+        >
+      </li>
+      <li (click)="logout()">
+        <a><i class="fa-solid fa-gear"></i>Log out</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="upper-nav-mob">
+  <img src="assets/dashboard-img/logo-img.png" alt="" />
+  <i class="fa-solid fa-bars"></i>
+</div>

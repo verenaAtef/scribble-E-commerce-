@@ -1,0 +1,98 @@
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  width: 100vw;
+}
+:host {
+  display: block;
+  max-width: 120%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #023047;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input,
+select {
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 2px solid #023047;
+  border-radius: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffb703;
+  color: #023047;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+}
+.delete {
+  background-color: #ee2222;
+  color: white;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+  :host {
+    padding: 10px;
+  }
+  input,
+  select {
+    padding: 6px;
+  }
+  button {
+    padding: 8px 16px;
+  }
+}
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 600px; /* Set a maximum width */
+  height: 80%; /* Adjust the height as needed */
+  max-height: 600px; /* Set a maximum height */
+  overflow: auto; /* Enable scrolling if content exceeds container size */
+}
+
+:host {
+  display: block;
+  max-width: 120%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Rest of your CSS styles remain unchanged */

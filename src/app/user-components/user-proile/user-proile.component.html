@@ -1,0 +1,36 @@
+<app-upper-nav user="[userProfile]"></app-upper-nav>
+<div class="userprofile">
+  <p class="titlepage font">User profile</p>
+  <div class="contain">
+    <div class="row d-flex">
+      <div class="col photo">
+        <img class="mostafa image" [src]="image" alt="" />
+      </div>
+
+      <div class="col">
+        <div class="datauser d-flex">
+          <div>
+            <p class="data font">User Name:</p>
+            <p class="data font">E-mail:</p>
+            <p class="data font" *ngIf="userProfile.Age">Age:</p>
+            <p class="data font" *ngIf="userProfile.Age">Phone:</p>
+            <p class="data font" *ngIf="userProfile.Age">Address:</p>
+          </div>
+          <div *ngIf="userProfile">
+            <p class="font database d-block">{{ userProfile.userName }}</p>
+            <p class="font database d-block">{{ userProfile.Email }}</p>
+            <p class="font database d-block">{{ userProfile.Age }}</p>
+            <p class="font database d-block">{{ userProfile.Phone }}</p>
+            <p class="font database d-block">{{ userProfile.Address }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col colorr">
+        <img class="color" src="assets/images/pngwing.com (20).png" alt="" />
+      </div>
+      <div class="text-center edit">
+        <img class="roll" src="assets/images/Group 84.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>

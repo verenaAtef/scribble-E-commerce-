@@ -1,0 +1,10 @@
+<label for="photoUpload">
+  <div id="photoPreview" [style.backgroundImage]="'url(' + imageUrl + ')'">
+    <input
+      type="file"
+      id="photoUpload"
+      accept="image/*"
+      (change)="onFileSelected($event)"
+    />
+  </div>
+</label>
